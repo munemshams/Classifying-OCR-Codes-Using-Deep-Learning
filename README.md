@@ -64,14 +64,20 @@ The model is trained using:
 
 ---
 
-# Installation and Dependencies
+# Python Libraries Used
 
-Install dependencies:
+The OCR classification pipeline is implemented using the following Python libraries:
 
-```bash
-python -m pip install torch pandas
-```
-
+| Library | Purpose |
+|--------|--------|
+| PyTorch (torch) | Core deep learning framework used to build and train the multimodal neural network |
+| torch.nn | Defines neural network layers including CNN layers, linear layers, and activation functions |
+| torch.optim | Implements the Adam optimizer used during model training |
+| torch.utils.data | Handles dataset loading, batching, and train/test splits |
+| pandas | Used to export evaluation predictions to CSV format |
+| pickle | Loads the serialized OCR dataset stored in `.pkl` format |
+| numpy | Numerical operations and tensor manipulation |
+| os | File and directory management for saving model outputs |
 ---
 
 # How to Run
